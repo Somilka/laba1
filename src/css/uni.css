@@ -23,6 +23,10 @@ header .flex {
     align-items: center;
 }
 
+.aie {
+    align-items: end;
+}
+
 .jcs {
     justify-content: start;
 }
@@ -41,6 +45,10 @@ header .flex {
 
 .w40 {
     width: 40%;
+}
+
+.nogap {
+    gap: 0;
 }
 
 .btn {
@@ -78,7 +86,6 @@ header .flex {
     font-weight: 400;
     font-size: 44px;
     letter-spacing: 1.32px;
-    width: 339px;
 }
 
 .sec-text {
@@ -90,4 +97,12 @@ header .flex {
 
 .btn.border {
     border: 1px solid #70748C;
+}
+
+.btn.purple {
+    background: #4E66FF;
+    border-radius: 4px;
+    padding: 22px 40px;
+    color: white;
+    width: auto;
 }

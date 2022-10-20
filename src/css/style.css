@@ -2,7 +2,7 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: Roboto, sans-serif;
+    font-family: "Roboto", sans-serif;
 }
 
 body {
@@ -47,6 +47,10 @@ header .btn.min:hover,
     color: white;
 }
 
+main {
+    flex-direction: column;
+}
+
 .nav-item {
     color: gray;
     user-select: none;
@@ -85,6 +89,15 @@ section {
 
 h3 {}
 
+section.curb {
+    background-color: #F9FBFD;
+}
+
+section.data {
+    padding-top: 58px;
+    padding-bottom: 0;
+}
+
 .curb .btn {
     width: 271px;
     padding: 21px 23px;
@@ -99,7 +112,17 @@ h3 {}
     margin-left: 36px;
 }
 
-.curb .sec-text {
+.curb .sec-title {
+    width: 339px;
+}
+
+.data .sec-title {
+    width: 650px;
+}
+
+.curb .sec-text,
+.data .sec-text,
+.trust .sec-text {
     margin-top: 25px;
 }
 
@@ -116,7 +139,7 @@ h3 {}
     align-items: start;
 }
 
-.curb .ad__title {
+.curb .subtitle {
     font-size: 18px;
     line-height: 28px;
     color: #393737;
@@ -124,11 +147,284 @@ h3 {}
     margin-top: 24px;
 }
 
-.curb .ad__txt {
+.curb .gray-txt {
     margin-top: 21px;
     font-size: 15px;
     line-height: 24px;
     font-weight: 400;
     color: #70748C;
     max-width: 270px;
+}
+
+.data .img-block {
+    position: relative;
+    margin-top: 60px;
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: end;
+    width: 1200px;
+    align-self: center;
+}
+
+.data .img-block .flex {
+    position: absolute;
+    left: 0px;
+    bottom: 0;
+    gap: 30px;
+}
+
+.data-img-wide {
+    position: absolute;
+    top: 48px;
+    left: 136px;
+}
+
+section.trust {
+    padding-top: 181px;
+    padding-bottom: 192px;
+}
+
+.trust .flex.worked-with {
+    margin-top: 97px;
+}
+
+p.worked-with {
+    color: #393737;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 28px;
+}
+
+.worked-with-list {
+    padding: 0px 69px;
+    display: flex;
+    gap: 138px;
+    justify-content: space-between;
+    row-gap: 18px;
+    flex-wrap: wrap;
+}
+
+.worked-with-item {
+    width: 120px;
+    height: 120px;
+}
+
+.purple-dec {
+    width: 625px;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 32px;
+    line-height: 46px;
+    /* or 144% */
+    letter-spacing: 0.32px;
+    color: #4E66FF;
+    /* margin-left: -20px; */
+    text-indent: -12px;
+}
+
+.trust .flex.sf {
+    margin-top: 162px;
+    gap: 75px;
+    width: 1032px;
+}
+
+.trust .sf .flex {
+    gap: 20px;
+}
+
+.logo-sf {
+    width: 138px;
+    height: 138px;
+}
+
+.trust .subtitle {
+    margin-top: 10px;
+}
+
+.trust .sf .sec-text {
+    width: 169px;
+    margin-top: 7px;
+}
+
+section.cities {
+    padding-top: 60px;
+    padding-bottom: 80px;
+    background: #F0F8FF;
+}
+
+.purple-title {
+    font-style: normal;
+    font-weight: 400;
+    font-size: 96px;
+    line-height: 101px;
+    /* or 105% */
+    letter-spacing: 3.84px;
+    color: #4E66FF;
+}
+
+.cities .purple-title {
+    width: 479px;
+}
+
+.purple-subtext {
+    font-style: normal;
+    font-weight: 400;
+    font-size: 15px;
+    line-height: 24px;
+    /* or 160% */
+    color: #4E66FF;
+}
+
+.purple-text {
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 28px;
+    /* or 156% */
+    color: #4E66FF;
+}
+
+.cities .purple-subtext {
+    width: 333px;
+}
+
+.cities .purple-text {
+    width: 237px;
+}
+
+.cities .impact {
+    gap: 33px;
+}
+
+.cities .flex.aie {
+    margin-top: 63px;
+}
+
+section.posts {
+    padding: 100px 200px;
+    background-color: #F9FBFD;
+}
+
+.posts .posts-title {
+    /* font-family: 'Roboto'; */
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 28px;
+    /* identical to box height, or 156% */
+    color: #393737;
+}
+
+.post-list {
+    margin-top: 24px;
+    gap: 20px;
+}
+
+.post-card {
+    width: 333px;
+    border-bottom-left-radius: 12px;
+    border-bottom-right-radius: 12px;
+    background-color: #fff;
+    overflow: hidden;
+}
+
+.post-card .card-desc {
+    padding: 20px;
+    height: 159px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.post-card .card-title {
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 22px;
+}
+
+.post-card .card-date {
+    font-style: normal;
+    font-weight: 400;
+    font-size: 15px;
+    line-height: 24px;
+    /* identical to box height, or 160% */
+    color: #B5B7C7;
+}
+
+.posts .btn.border {
+    align-self: start;
+    margin-top: 48px;
+    padding-right: 48px;
+}
+
+section.connect {
+    background-color: #DDEBFF;
+}
+
+.connect .sqr {
+    width: 562px;
+    height: 562px;
+    position: relative;
+    padding: 48px 50px;
+}
+
+.img-connect-border.tl {
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+.img-connect-border.tr {
+    position: absolute;
+    top: 0;
+    right: 0;
+}
+
+.img-connect-border.bl {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+}
+
+.img-connect-border.br {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+}
+
+.connect .sqr-title {
+    font-style: normal;
+    font-weight: 700;
+    font-size: 44px;
+    line-height: 50px;
+    /* or 114% */
+    letter-spacing: 1.32px;
+    color: #393737;
+}
+
+.connect .sqr-subtitle {
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 21px;
+    /* or 117% */
+    letter-spacing: 1.8px;
+    color: #393737;
+}
+
+.connect .content {
+    gap: 75px;
+}
+
+.connect form {
+    width: 606px;
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+
+.connect form .flex input {
+    width: 293px;
 }
