@@ -1,8 +1,10 @@
-* {
+*,
+p,
+div {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: "Roboto", sans-serif;
+    font-family: 'Roboto', sans-serif;
 }
 
 body {
@@ -80,7 +82,7 @@ h1 {
 .target-txt {
     width: 365px;
     margin-top: 122px;
-    color: #70748C;
+    color: #70748c;
 }
 
 section {
@@ -90,7 +92,7 @@ section {
 h3 {}
 
 section.curb {
-    background-color: #F9FBFD;
+    background-color: #f9fbfd;
 }
 
 section.data {
@@ -104,7 +106,7 @@ section.data {
     font-weight: 400;
     font-size: 15px;
     line-height: 18px;
-    letter-spacing: .45px;
+    letter-spacing: 0.45px;
     margin-top: 57px;
 }
 
@@ -152,7 +154,7 @@ section.data {
     font-size: 15px;
     line-height: 24px;
     font-weight: 400;
-    color: #70748C;
+    color: #70748c;
     max-width: 270px;
 }
 
@@ -218,7 +220,7 @@ p.worked-with {
     line-height: 46px;
     /* or 144% */
     letter-spacing: 0.32px;
-    color: #4E66FF;
+    color: #4e66ff;
     /* margin-left: -20px; */
     text-indent: -12px;
 }
@@ -250,7 +252,7 @@ p.worked-with {
 section.cities {
     padding-top: 60px;
     padding-bottom: 80px;
-    background: #F0F8FF;
+    background: #f0f8ff;
 }
 
 .purple-title {
@@ -260,7 +262,7 @@ section.cities {
     line-height: 101px;
     /* or 105% */
     letter-spacing: 3.84px;
-    color: #4E66FF;
+    color: #4e66ff;
 }
 
 .cities .purple-title {
@@ -273,7 +275,7 @@ section.cities {
     font-size: 15px;
     line-height: 24px;
     /* or 160% */
-    color: #4E66FF;
+    color: #4e66ff;
 }
 
 .purple-text {
@@ -282,7 +284,7 @@ section.cities {
     font-size: 18px;
     line-height: 28px;
     /* or 156% */
-    color: #4E66FF;
+    color: #4e66ff;
 }
 
 .cities .purple-subtext {
@@ -303,7 +305,7 @@ section.cities {
 
 section.posts {
     padding: 100px 200px;
-    background-color: #F9FBFD;
+    background-color: #f9fbfd;
 }
 
 .posts .posts-title {
@@ -327,6 +329,14 @@ section.posts {
     border-bottom-right-radius: 12px;
     background-color: #fff;
     overflow: hidden;
+    user-select: none;
+    transition: transform 0.2s ease-in-out, box-shadow 0.2s ease-in-out;
+}
+
+.post-card:hover {
+    cursor: pointer;
+    transform: scale(1.01);
+    box-shadow: 0px 0px 10px -4px black;
 }
 
 .post-card .card-desc {
@@ -350,7 +360,7 @@ section.posts {
     font-size: 15px;
     line-height: 24px;
     /* identical to box height, or 160% */
-    color: #B5B7C7;
+    color: #b5b7c7;
 }
 
 .posts .btn.border {
@@ -360,7 +370,7 @@ section.posts {
 }
 
 section.connect {
-    background-color: #DDEBFF;
+    background-color: #ddebff;
 }
 
 .connect .sqr {
@@ -422,9 +432,44 @@ section.connect {
     width: 606px;
     display: flex;
     flex-direction: column;
+    align-items: start;
     gap: 30px;
 }
 
 .connect form .flex input {
     width: 293px;
+}
+
+.connect form input,
+.connect form textarea {
+    padding: 11px 30px;
+    background: #ffffff;
+    border: 2px solid #ffffff;
+    border-radius: 4px;
+    font-weight: 400;
+    font-size: 24px;
+}
+
+.connect form input:focus,
+.connect form textarea:focus {
+    outline: none;
+    border: none;
+    border: 2px solid #ffffff;
+    background-color: #f3f3f3;
+}
+
+.connect form textarea:focus {
+    border-top: 11px solid #f3f3f3;
+    border-bottom: 11px solid #f3f3f3;
+    border-left: 30px solid #f3f3f3;
+    border-right: 30px solid #f3f3f3;
+    box-shadow: 0px 0px 0px 2px #fff;
+    padding: none;
+}
+
+.connect form textarea.msg {
+    padding: 40px 30px;
+    resize: none;
+    /* overflow: hidden; */
+    max-height: 196px;
 }

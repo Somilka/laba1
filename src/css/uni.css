@@ -55,7 +55,7 @@ header .flex {
     padding: 10px;
     border-radius: 4px;
     user-select: none;
-    transition: background-color .2s ease-in-out, color .2s ease-in-out, border .2s ease-in-out, filter .2s ease-in-out;
+    transition: background-color 0.2s ease-in-out, color 0.2s ease-in-out, border 0.2s ease-in-out, filter 0.2s ease-in-out;
 }
 
 .btn:hover {
@@ -64,7 +64,11 @@ header .flex {
 }
 
 .btn.light:hover {
-    filter: brightness(.95);
+    filter: brightness(0.95);
+}
+
+.btn.touch:hover {
+    filter: brightness(1.2);
 }
 
 .btn.min {
@@ -76,7 +80,7 @@ header .flex {
 }
 
 .btn.yellow {
-    background-color: #FFEA31;
+    background-color: #ffea31;
     color: #393737;
     border: none;
 }
@@ -90,19 +94,31 @@ header .flex {
 
 .sec-text {
     font-size: 15px;
-    color: #70748C;
+    color: #70748c;
     line-height: 24px;
     width: 451px;
 }
 
 .btn.border {
-    border: 1px solid #70748C;
+    border: 1px solid #70748c;
 }
 
 .btn.purple {
-    background: #4E66FF;
+    background: #4e66ff;
     border-radius: 4px;
     padding: 22px 40px;
     color: white;
+    width: auto;
+}
+
+.btn.touch {
+    font-style: normal;
+    font-weight: 400;
+    font-size: 24px;
+    color: white;
+    background: #393737;
+    border-radius: 4px;
+    padding: 22px 24px 23px 31px;
+    margin-top: 20px;
     width: auto;
 }

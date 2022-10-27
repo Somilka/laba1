@@ -5,6 +5,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/src/css/reset.css">
     <link rel="stylesheet" href="/src/css/uni.css">
     <link rel="stylesheet" href="/src/css/style.css">
     <title>Document</title>
@@ -16,12 +17,12 @@
             <div class="flex jcsb w100">
                 <div class="logo">V A D E</div>
                 <nav class="flex aic">
-                    <div class="nav-item">technology</div>
-                    <div class="nav-item">about us</div>
-                    <div class="nav-item">impact</div>
-                    <div class="nav-item">porfolio</div>
-                    <div class="nav-item">blog</div>
-                    <div class="btn min">book a demo</div>
+                    <p class="nav-item">technology</p>
+                    <p class="nav-item">about us</p>
+                    <p class="nav-item">impact</p>
+                    <p class="nav-item">porfolio</p>
+                    <p class="nav-item">blog</p>
+                    <p class="btn min">book a demo</p>
                 </nav>
             </div>
         </div>
@@ -29,8 +30,8 @@
             <h1>Connecting the curb to new insights</h1>
         </div>
         <div class="content flex column ais w40">
-            <div class="target-txt">Real-time curb data for smart cities. Measure occupancy, analyze demand, and manage curb space with the right tools.</div>
-            <div class="target-btn btn big yellow light">Book a demo</div>
+            <p class="target-txt">Real-time curb data for smart cities. Measure occupancy, analyze demand, and manage curb space with the right tools.</p>
+            <button class="target-btn btn big yellow light">Book a demo</button>
         </div>
     </header>
     <main>
@@ -169,12 +170,13 @@
                     <img class="img-connect-border br" src="../img/connect/br.svg" alt="">
                 </div>
                 <form action="">
-                    <input type="text" name="" id="">
-                    <input type="email" name="" id="">
-                    <div class="flex jcsb">
-                        <input type="text" name="" id=""><input type="text" name="" id="">
+                    <input class="w100" type="text" placeholder="name" name="" id="">
+                    <input class="w100" type="email" placeholder="email" name="" id="">
+                    <div class="flex jcsb w100">
+                        <input type="text" placeholder="company" name="" id=""><input type="text" placeholder="position" name="" id="">
                     </div>
-                    <input type="text" name="" id="">
+                    <textarea class="w100 msg autoresize" type="text" placeholder="message" name="" id="" rows="1"></textarea>
+                    <button class="btn touch">Get in touch</button>
                 </form>
             </div>
         </section>
@@ -182,6 +184,8 @@
     <footer>
 
     </footer>
+
+    <script src="/src/js/index.js"></script>
 </body>
 
 </html>
